@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 2</title>
+</head>
+<body>
+                <table border="1">
+                <tr>
+                    <td>
+                        <label for="id_nome">nome:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="f_nome" id="id_nome" 
+                               required placeholder="nome completo" minlength="5" 
+                               maxlength="30" size="20">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="id_sexo:">sexo:</label></td>
+                    <td>
+                        <input type="radio" name="masculino" id="id_masculino" value="M">
+                        <label for="id_masculino">masculino</label>
+                        <input type="radio" name="feminino" id="id_feminino" value="F">
+                        <label for="id_feminino">feminino</label>
+                    </td>
+                
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <label for="id_curso">escolariedade:</label>
+                        <select name="curso" id="id_curso" >
+                            <option value="0">1º grau</option>
+                            <option value="1">2º grau</option>
+                            <option value="2">superior</option>
+                        </select>
+                
+
+                    </td>
+                </tr>
+
+
+                
+            </table>
+            <br><br>
+
+            <table border="1">
+    <!-- Número -->
+    <tr>
+        <td><b>Número:</b></td>
+        <td><input type="text" name="numero"></td>
+    </tr>
+
+    <!-- Bandeira -->
+    <tr>
+        <td><b>Bandeira:</b></td>
+        <td>
+            <input type="radio" name="bandeira" value="visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" width="80"><br><br>
+
+            <input type="radio" name="bandeira" value="mastercard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" width="80"><br><br>
+
+            <input type="radio" name="bandeira" value="amex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" width="80">
+        </td>
+    </tr>
+
+    <!-- Validade -->
+    <tr>
+        <td><b>Validade:</b></td>
+        <td>
+            <select name="validade">
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+            </select>
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Valores</title>
+    <link rel="stylesheet" 
+    type="text/css" 
+    href="../css/estilo.css">
+
+</head>
+<body>
+    <main class="container">
+    <header class="cabecalho">
+        <h1>Troca de Valores</h1>
+        <p>Insira dois valores. O programa ira inverter os valores de A e B utilizando
+        apenas atribuiçoes</p>
+    </header>
+    <section>
+    <form onsubmit="executar(event)" onreset="resetar()">
+        <label for="idValorA">Informe o Valor de A:</label><br>
+        <input id="idValorA" type="text" required placeholder="Ex.: 20">
+        <br><br>
+
+        <label for="idValorB">Informe o Valor de B:</label><br>
+        <input id="idValorB" type="text" required placeholder="Ex.: 20">
+        <br><br>
+
+        <label id="idResultado"></label>
+        <br><br>
+
+        <button type="submit">Trocar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </section>
+        </main>
+
+    </form>
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio02.js"></script>
+</body>
+</html>

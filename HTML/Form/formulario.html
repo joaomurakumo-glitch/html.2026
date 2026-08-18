@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>formulario 1</title>
+</head>
+<body>
+
+<form>
+
+<!-- COMPRAS -->
+<fieldset>
+    <legend>Compras</legend>
+
+    <!-- Produtos -->
+    <label for="produtos">Produtos:</label>
+    <select id="produtos" name="produtos">
+        <optgroup label="Aquários">
+            <option>Aquário 43L</option>
+            <option>Aquário 84L</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+
+    <!-- Lista de Compras -->
+    <label for="lista">Lista de Compras:</label><br>
+    <textarea id="lista" name="lista" rows="5" cols="30"></textarea>
+
+    <br><br>
+
+    <!-- Complementos -->
+    <label>Complementos:</label><br>
+
+    <input type="radio" id="movel" name="complemento" value="movel">
+    <label for="movel">Móvel + Luminária</label><br>
+
+    <input type="radio" id="luminaria" name="complemento" value="luminaria">
+    <label for="luminaria">Luminária</label><br>
+
+    <input type="radio" id="vidro" name="complemento" value="vidro">
+    <label for="vidro">Só vidro</label>
+
+    <br><br>
+
+    <!-- Presente -->
+    <input type="checkbox" id="presente" name="presente">
+    <label for="presente">Entrega como Presente</label>
+
+    <br><br>
+
+    <!-- Valor -->
+    <label for="valor">Valor Total:</label>
+    <input type="text" id="valor" name="valor">
+
+</fieldset>
+
+<br>
+
+<!-- INFORMAÇÕES DO AQUÁRIO -->
+<fieldset>
+    <legend>Informações do Aquário</legend>
+
+    <!-- PH -->
+    <label>Ph do Aquário:</label><br>
+
+    <input type="radio" id="acido" name="ph" value="acido">
+    <label for="acido">Ácido</label>
+
+    <input type="radio" id="alcalino" name="ph" value="alcalino">
+    <label for="alcalino">Alcalino</label>
+
+    <br><br>
+
+    <!-- Peixes -->
+    <fieldset>
+        <legend>Peixes</legend>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade">
+
+        <br><br>
+
+        <label for="id_especie">Espécie:</label>
+        <select id="id_especie" name="especie">
+            <option>Molinésia</option>
+            <option>Espada</option>
+            <option>Plati</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <!-- Outros -->
+    <label>Outros:</label><br>
+
+    <input type="checkbox" id="pedras" name="outros" value="pedras">
+    <label for="pedras">Pedras</label><br>
+
+    <input type="checkbox" id="plantas" name="outros" value="plantas">
+    <label for="plantas">Plantas</label>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>

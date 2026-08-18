@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <h3>Troca de valores</h3>
+<p>
+        Escreva um algoritmo que armazene um valor em uma variável A e outro valor em uma variável B.
+        Em seguida, utilizando apenas atribuições entre variáveis, troque os conteúdos das variáveis, fazendo 
+        com que o valor que está em A passe para B e vice-versa. Ao final, escreva os valores que ficaram 
+        armazenados nas variáveis.
+</p>
+        <form onsubmit="executar2(event)" onreset="resetar2()">
+        <label>A:</label><br>
+        <input id="a" required><br>
+        <label>B:</label><br>
+        <input id="b" required><br><br>
+
+        <label id="res2"></label><br><br>
+
+        <button>Trocar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+
+    </form>
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio02.html"></script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Desconto 10%</h3>
+        <p>
+            Escreva um algoritmo que leia o valor de um produto. Utilize a 
+            condicional SE para aplicar um desconto de 10% caso 
+            o valor seja maior que R$ 100,00. Escreva o valor final com o desconto aplicado
+        </p>
+        <form onsubmit="executar5(event)" onreset="resetar5()">
+        <label>Valor:</label><br>
+        <input id="valor5" required><br><br>
+
+        <label id="res5"></label><br><br>
+
+        <button>Calcular</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </form>        
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio05.html"></script>
+
+    </body>
+</html>

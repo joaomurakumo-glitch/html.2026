@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jokenpô</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <img src="img/jokenpo.png" alt="Jokenpô" class="logo">
+
+            <h1>Jokenpô</h1>
+
+            <p>Pedra, Papel e Tesoura</p>
+        </header>
+
+        <section class="placar">
+
+            <div class="jogador">
+                <h2>Jogador</h2>
+                <span id="pontosJogador">0</span>
+            </div>
+
+            <div class="versus">
+                <span>VS</span>
+            </div>
+
+            <div class="computador">
+                <h2>Computador</h2>
+                <span id="pontosComputador">0</span>
+            </div>
+
+        </section>
+
+        <section class="escolha-computador">
+
+            <h2>Escolha do Computador</h2>
+
+            <p id="escolhaComputador">
+                Aguardando jogada...
+            </p>
+
+        </section>
+
+        <section class="resultado">
+
+            <h2>Resultado</h2>
+
+            <img
+                id="imagemResultado"
+                src=""
+                alt="Resultado"
+            >
+
+            <p id="textoResultado">
+                Escolha uma opção para jogar!
+            </p>
+
+        </section>
+
+        <section class="escolha-jogador">
+
+            <h2>Escolha sua jogada</h2>
+
+            <div class="opcoes">
+
+                <button onclick="jogar(1)" class="opcao">
+
+                    <img
+                        src="img/pedra.png"
+                        alt="Pedra"
+                    >
+
+                    <span>Pedra</span>
+
+                </button>
+
+                <button onclick="jogar(2)" class="opcao">
+
+                    <img
+                        src="img/papel.png"
+                        alt="Papel"
+                    >
+
+                    <span>Papel</span>
+
+                </button>
+
+                <button onclick="jogar(3)" class="opcao">
+
+                    <img
+                        src="img/tesoura.png"
+                        alt="Tesoura"
+                    >
+
+                    <span>Tesoura</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="botoes">
+
+            <button
+                onclick="jogarNovamente()"
+                class="btn-jogar"
+            >
+                Jogar Novamente
+            </button>
+
+            <button
+                onclick="retornar()"
+                class="btn-retornar"
+            >
+                Retornar
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

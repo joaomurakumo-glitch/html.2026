@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+
+    <h3>Calculadora simples</h3>
+
+    <p>
+        Crie um programa que permite ao usuário inserir dois números e realizar
+        as operações de adição, subtração, multiplicação e divisão.
+    </p>
+
+    <form onsubmit="executar(event)" onreset="resetar()">
+
+        <label for="idNr1">Informe o número 1</label><br>
+        <input id="idNr1" type="number" step="0.0001" placeholder="Ex.: 0.0000" required>
+
+        <br><br>
+
+        <label for="idNr2">Informe o número 2</label><br>
+        <input id="idNr2" type="number" step="0.0001" placeholder="Ex.: 0.0000" required>
+
+        <br><br>
+
+        <label for="idOpcao">Operação</label><br>
+        <select id="idOpcao">
+            <option value="+">Adição</option>
+            <option value="-">Subtração</option>
+            <option value="*">Multiplicação</option>
+            <option value="/">Divisão</option>
+        </select>
+
+        <br><br>
+
+        <label id="idResultado"></label>
+
+        <br><br>
+
+        <button type="submit">Calcular</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+
+    </form>
+
+    <script>
+        function executar(event) {
+            event.preventDefault();
+
+            let n1 = parseFloat(document.getElementById("idNr1").value);
+            let n2 = parseFloat(document.getElementById("idNr2").value);
+            let op = document.getElementById("idOpcao").value;
+            let resultado = document.getElementById("idResultado");
+
+            let res;
+
+            if (op === "+") {
+                res = n1 + n2;
+            } else if (op === "-") {
+                res = n1 - n2;
+            } else if (op === "*") {
+                res = n1 * n2;
+            } else if (op === "/") {
+                if (n2 === 0) {
+                    resultado.innerText = "Erro: divisão por zero!";
+                    return;
+                }
+                res = n1 / n2;
+            }
+
+            resultado.innerText = "Resultado: " + res;
+        }
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio07.html"></script>
+
+
+</body>
+</html>

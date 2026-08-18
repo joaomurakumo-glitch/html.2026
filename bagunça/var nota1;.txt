@@ -1,0 +1,32 @@
+var nota1;
+var nota2;
+var flag = 1;
+
+while (flag === 1) {
+    nota1 = parseInt(prompt("Informe a nota 1"));
+
+    if (notaValida(nota1)) {
+        flag = 0;
+    } else {
+        alert("A nota " + nota1 + " é inválida. Informe um valor entre 8 e 10.");
+    }
+}
+
+flag = 1;
+
+while (flag === 1) {
+    nota2 = parseInt(prompt("Informe a nota 2"));
+
+    if (notaValida(nota2)) {
+        flag = 0;
+    } else {
+        alert("A nota " + nota2 + " é inválida. Informe um valor entre 8 e 10.");
+    }
+}
+
+var media = (nota1 + nota2) / 2;
+alert("Média: " + media);
+
+function notaValida(nota) {
+    return nota >= 8 && nota <= 10;
+}

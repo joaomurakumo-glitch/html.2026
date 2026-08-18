@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        
+<body>
+        <h3>Celsius → Fahrenheit</h3>
+        <p>
+        Conversor de Temperatura: Crie um programa que converte a temperatura de
+        Celsius para Fahrenheit e vice-versa, com base na entrada do usuário
+        </p>
+        <form onsubmit="executar9(event)" onreset="resetar9()">
+        <label>Celsius:</label><br>
+        <input id="temp9" required><br><br>
+
+        <label id="res9"></label><br><br>
+
+        <button>Converter</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </form>    
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio9.html"></script>
+        
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Idade em meses e dias</h3>
+        <p>
+            Faça um algoritmo que leia a idade de uma pessoa em anos e exiba essa idade expressa em 
+            meses e dias. Considere um ano com 365 dias e um mês com 30 dias
+        </p>
+        <form onsubmit="executar4(event)" onreset="resetar4()">
+        <label>Idade:</label><br>
+        <input id="idade4" required><br><br>
+
+        <label id="res4"></label><br><br>
+
+        <button>Converter</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </form>
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio04.html"></script>
+
+        
+    </body>
+</html>

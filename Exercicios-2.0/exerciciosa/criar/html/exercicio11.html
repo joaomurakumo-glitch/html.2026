@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Números</title>
+        <link rel="stylesheet" 
+    type="text/css" 
+    href="../css/estilo.css">
+
+</head>
+<body>
+    
+    <h3>Validador de Números Positivos, Negativos ou Zero</h3>
+    <p>Insira um número qualquer para verificar a sua classificação.</p>
+    
+    <form onsubmit="executar(event)" onreset="resetar()">
+        <label for="idNumero">Informe um Número:</label><br>
+        <input id="idNumero" type="number" step="any" required placeholder="Ex.: -5">
+        <br><br>
+
+        <label id="idResultado"></label>
+        <br><br>
+
+        <button type="submit">Validar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+    </form>
+
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio11.js"></script>
+</body>
+</html>

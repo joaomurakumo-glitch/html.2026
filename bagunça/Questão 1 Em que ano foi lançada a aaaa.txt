@@ -1,0 +1,156 @@
+Questão 1: Em que ano foi lançada a versão original do HTML, iniciando a padronização de documentos na rede?  
+ 
+R: B) 1991  
+  
+
+Questão 2: O ano de 1996 marcou a Web com a introdução de duas tecnologias essenciais para estilo e interatividade. Quais foram elas?  
+A) HTML 2 e HTML 4.  
+B) CSS 1 e Java Script.
+C) HTML 5 e CSS 3.
+D) PHP e Python.
+
+resposta: B) CSS 1 e Java Script.
+
+
+Questão 3: O HTML 5, versão que trouxe a semântica moderna e recursos multimídia avançados, teve seu lançamento e início de popularização em qual ano?  
+A) 1997  
+B) 2000  
+C) 2005  
+D) 2009 
+
+
+resposta:D) 2009
+
+
+3. Módulo 2: Arquitetura Cliente vs. Servidor e Tecnologias Core Exercício de Associação Relacione as tecnologias abaixo às suas funções descritas na arquitetura web: (A) HTML (B) CSS (C) JS
+
+( B )Responsável pela Aparência (folha de estilos).
+( A )Responsável pela Estrutura (marcação de dados).
+( C )Responsável pelo Comportamento (scripts de interatividade).
+
+
+
+Questão Conceitual (Ciclo de Vida) Com base no funcionamento da rede, descreva em ordem os quatro passos do ciclo de vida de uma página web (da ação do computador até a exibição final): (5 linhas).
+
+
+1. Computador faz uma requisição
+2. Servidor recebe e processa o pedido
+3. O servidor devolve o sinal HTML
+4. O navegador traduz o código e apresenta a tela visual.
+
+
+
+Diferenciação Técnica Explique a diferença entre Front-end e Back-end em uma única frase, utilizando obrigatoriamente os termos "interface amigável" e "lógica de dados". (5 linhas).
+
+
+O Front-end é a parte responsável pela interface amigável com a qual o usuário interage, enquanto o Back-end é responsável
+ pela lógica de dados, processamento das informações e comunicação com o banco de dados que fazem o sistema funcionar.
+
+
+
+
+4. Módulo 3: Anatomia de Tags e Formatação de Texto Identificação Visual e Hierárquica: Ao utilizar títulos de <h1> a <h6>, o que muda na percepção do navegador e do usuário conforme o número da tag aumenta? (4 linhas).
+
+
+
+
+
+
+
+
+
+
+
+
+
+Preenchimento de Lacunas Complete o parágrafo abaixo com as tags ou símbolos de comentário corretos, baseando-se nas ações descritas entre parênteses: "Para que o navegador <b>Texto</b> (deixe o texto encorpado), utilizamos a tag de negrito. Se o objetivo for uma ação que <i>Texto</i> (inclina o texto), aplicamos a tag de itálico. Para organizar o layout, a tag <br> (funciona como a tecla Enter, quebrando a linha) e a tag <hr> (cria uma linha divisória horizontal) são fundamentais. Por fim, para inserir um <1-- Nota --> (comentário exclusivo para o programador), usamos a sintaxe de notas oculta ao usuário final." 
+
+
+
+
+
+
+
+
+
+5. Módulo 4: Desafios de Codificação Prática Desafio 1 (Links): Escreva a linha de código para um link que aponte para o destino "contato.html". O link deve forçar a abertura em uma nova aba e exibir o texto "Fale Conosco". 
+
+
+
+<a href="contato.html" target="_blank">Fale Conosco</a>
+
+
+
+
+Desafio 2 (Listas): Escreva o código HTML para uma "Lista Desordenada" (com marcadores) contendo três itens de sua escolha. 
+
+
+
+<ul>
+    <li>café 1 </li>
+    <li>cha 2 </li>
+    <li>chocolate 3 </li>
+<ul>
+
+
+
+Desafio 3 (Imagens): Crie a tag de imagem para o arquivo "logo.png". Insira o texto alternativo "Logotipo da Empresa" e defina a largura para 300 pixels. Lembre-se: esta é uma tag "vazia". 
+
+
+<img src="hoyoverse" alt="descrição da foto" width= "300">
+     alt="Descrição with="200">
+
+
+6. Módulo 5: Projeto Final - O Esqueleto da Página Utilizando os padrões e a estrutura semântica do HTML5, monte o código completo de uma página. Siga rigorosamente a ordem abaixo para a seção de conteúdo:
+
+ 
+• Estrutura básica completa (DOCTYPE, html, head com charset e title, e body). 
+• Um cabeçalho (<header>) com um título <h1>. 
+• Uma seção de conteúdo (<section>) contendo: 
+• Uma imagem (<img>). 
+• Um parágrafo (<p>). 
+• Uma lista desordenada (<ul>) com três itens. 
+• Um rodapé (<footer>) com um texto de crédito simples. 
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Final - HTML5</title>
+</head>
+<body>
+
+    <header>
+        <h1>Minha Página HTML5</h1>
+    </header>
+
+    <section>
+        <img src="imagem.jpg" alt="Imagem de exemplo">
+
+        <p>Esta é uma página criada utilizando a estrutura semântica do HTML5.</p>
+
+        <ul>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Arthur Rodrigues.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

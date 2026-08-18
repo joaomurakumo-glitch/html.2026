@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Desconto</title>
+        <link rel="stylesheet" 
+    type="text/css" 
+    href="../css/estilo.css">
+
+</head>
+<body>
+    <main class="container">
+        <section>
+      <header class="cabecalho">
+      <h1>Calculo de Desconto</h1>
+      <p>Insira o valor do produto. Se for maior que R$ 100,00, você ganhará 10% de desconto!
+      </p>
+    </header>
+    
+    <form onsubmit="executar(event)" onreset="resetar()">
+        <label for="idValor">Valor do Produto (R$):</label><br>
+        <input id="idValor" type="number" step="0.01" required placeholder="Ex.: 120.00">
+        <br><br>
+
+        <label id="idResultado"></label>
+        <br><br>
+
+        <button type="submit">Calcular Total</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </section>
+        </main>
+
+    </form>
+
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio05.js"></script>
+</body>
+</html>

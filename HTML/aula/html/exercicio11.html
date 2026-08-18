@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+        <h3>Positivo / Negativo</h3>
+        <p>
+        Validador de Números Positivos/Negativos: Peça ao usuário para 
+        inserir um número e verifique se é positivo, negativo ou zero
+        </p>
+<form onsubmit="executar12(event)" onreset="resetar12()">
+<label>Número:</label><br>
+<input id="num12" required><br><br>
+
+<label id="res12"></label><br><br>
+
+<button>Verificar</button>
+<button type="reset">Limpar</button>
+<button type="button" onclick="retornar()">Retornar</button>
+</form>         
+
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio11.html"></script>
+
+</body>
+</html>

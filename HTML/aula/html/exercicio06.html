@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Ano Bissexto</title>
+</head>
+<body>
+
+    <h3>Verificador de Ano Bissexto</h3>
+
+    <p>
+    Verificador de Ano Bissexto: Solicite ao usuário que 
+    insira um ano e determine se é bissexto ou não
+    </p>
+
+        <form onsubmit="executar6(event)" onreset="resetar6()">
+        <label>Ano:</label><br>
+        <input id="ano6" required><br><br>
+
+        <label id="res6"></label><br><br>
+
+        <button>Verificar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+</form>    
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio06.html"></script>
+
+
+</body>
+</html>

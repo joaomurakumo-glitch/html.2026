@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+        <link rel="stylesheet" 
+    type="text/css" 
+    href="../css/estilo.css">
+
+</head>
+<body>
+    
+    <h3>Calculadora Simples</h3>
+    <p>Insira dois números para ver o resultado das quatro operações básicas.</p>
+    
+    <form onsubmit="executar(event)" onreset="resetar()">
+        <label for="idNum1">Informe o Primeiro Número:</label><br>
+        <input id="idNum1" type="number" step="any" required placeholder="Ex.: 10">
+        <br><br>
+
+        <label for="idNum2">Informe o Segundo Número:</label><br>
+        <input id="idNum2" type="number" step="any" required placeholder="Ex.: 5">
+        <br><br>
+
+        <label id="idResultado"></label>
+        <br><br>
+
+        <button type="submit">Calcular</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+    </form>
+
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio07.js"></script>
+</body>
+</html>

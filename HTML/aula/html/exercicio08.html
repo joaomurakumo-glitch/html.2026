@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>Par ou Ímpar</h3>
+        <p>
+        Verificador de Número Par ou Ímpar: 
+        Peça ao usuário para inserir um número e determine se é par ou ímpar
+        </p>
+        <form onsubmit="executar8(event)" onreset="resetar8()">
+        <label>Número:</label><br>
+        <input id="num8" required><br><br>
+
+        <label id="res8"></label><br><br>
+
+        <button>Verificar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </form>    
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio08.html"></script>
+    
+</body>
+</html>

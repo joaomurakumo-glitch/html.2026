@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+        <h3>IMC</h3>
+        <p>
+        Calculadora de IMC (Índice de Massa Corporal): Permita que o usuário 
+        insira seu peso e altura e calcule seu IMC
+        </p>
+        <form onsubmit="executar11(event)" onreset="resetar11()">
+        <label>Peso:</label><br>
+        <input id="peso" required><br>
+        <label>Altura:</label><br>
+        <input id="altura11" required><br><br>
+
+        <label id="res11"></label><br><br>
+
+        <button>Calcular</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        <br>
+        </form>           
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio10.html"></script>
+ 
+
+    </body>
+
+</html>

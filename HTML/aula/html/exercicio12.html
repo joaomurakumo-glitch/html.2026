@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+        <h3>Maior e menor</h3>
+        <p>
+        Comparador de Números: Solicite ao usuário que 
+        insira três números e determine qual é o maior e qual é o menor
+        </p>
+        <form onsubmit="executar13(event)" onreset="resetar13()">
+        <label>N1:</label><br>
+        <input id="n13a" required><br>
+        <label>N2:</label><br>
+        <input id="n13b" required><br>
+        <label>N3:</label><br>
+        <input id="n13c" required><br><br>
+
+        <label id="res13"></label><br><br>
+
+        <button>Verificar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </form> 
+        
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio12.html"></script>
+
+</body>
+</html>

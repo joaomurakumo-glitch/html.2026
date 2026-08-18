@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro</title>
+</head>
+
+<body>
+
+<form>
+
+<table border="1" width="700">
+
+<!-- Cabeçalho -->
+<tr>
+    <td style="background-color: lightblue;">
+        Não é associado? Faça seu cadastro
+    </td>
+    <td style="background-color: darkblue;"></td>
+</tr>
+
+<!-- Nome -->
+<tr>
+    <td><label for="nome">Nome</label></td>
+    <td><input type="text" id="nome" name="nome" size="50"></td>
+</tr>
+
+<tr>
+    <td><label for="nomec">Nome Completo</label></td>
+    <td><input type="text" id="nomec" name="nomec" size="50"></td>
+</tr>
+
+<tr>
+    <td><label for="cpf">CPF</label></td>
+    <td><input type="text" id="cpf" name="cpf" size="50"></td>
+</tr>
+
+<tr>
+    <td><label for="email">E-mail</label></td>
+    <td><input type="email" id="email" name="email" size="50"></td>
+</tr>
+
+<tr>
+    <td><label for="site">WebSite</label></td>
+    <td><input type="text" id="site" name="site" size="50"></td>
+</tr>
+
+<tr>
+    <td><label for="end">Endereço</label></td>
+    <td><input type="text" id="end" name="end" size="50"></td>
+</tr>
+
+<!-- Bairro / Cidade -->
+<tr>
+    <td><label for="bairro">Bairro</label></td>
+    <td>
+        <input type="text" id="bairro" name="bairro">
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade">
+    </td>
+</tr>
+
+<!-- CEP / UF -->
+<tr>
+    <td><label for="cep">CEP</label></td>
+    <td>
+        <input type="text" id="cep" name="cep">
+
+        <label for="uf">UF</label>
+        <select id="uf" name="uf">
+            <option>AC</option><option>AL</option><option>AP</option>
+            <option>AM</option><option>BA</option><option>CE</option>
+            <option>DF</option><option>ES</option><option>GO</option>
+            <option>MA</option><option>MT</option><option>MS</option>
+            <option>MG</option><option>PA</option><option>PB</option>
+            <option>PR</option><option>PE</option><option>PI</option>
+            <option>RJ</option><option>RN</option><option>RS</option>
+            <option>RO</option><option>RR</option><option>SC</option>
+            <option>SP</option><option>SE</option><option>TO</option>
+        </select>
+    </td>
+</tr>
+
+<!-- Telefone / Fax -->
+<tr>
+    <td><label for="tel">Telefone</label></td>
+    <td>
+        <input type="text" id="tel" name="tel">
+        <label for="fax">Fax</label>
+        <input type="text" id="fax" name="fax">
+    </td>
+</tr>
+
+<!-- Data / Sexo -->
+<tr>
+    <td><label for="data">Data Nascimento</label></td>
+    <td>
+        <input type="date" id="data" name="data">
+
+        <label>Sexo</label>
+        <input type="radio" id="m" name="sexo">
+        <label for="m">M</label>
+
+        <input type="radio" id="f" name="sexo">
+        <label for="f">F</label>
+    </td>
+</tr>
+
+<!-- Celular / Estado Civil -->
+<tr>
+    <td><label for="cel">Celular</label></td>
+    <td>
+        <input type="text" id="cel" name="cel">
+
+        <label for="ec">Est.Civil</label>
+        <select id="ec" name="ec">
+            <option>Solteiro</option>
+            <option>Casado</option>
+            <option>Viúvo</option>
+            <option>Divorciado</option>
+        </select>
+    </td>
+</tr>
+
+<!-- Login / Senha -->
+<tr>
+    <td><label for="login">Login</label></td>
+    <td>
+        <input type="text" id="login" name="login">
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha">
+    </td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- Interesses -->
+<label>Deseja receber informações sobre os seguintes assuntos abaixo:</label><br><br>
+
+<input type="checkbox" id="tec"><label for="tec">Tecnologia</label>
+<input type="checkbox" id="esp"><label for="esp">Esportes</label>
+<input type="checkbox" id="auto"><label for="auto">Automóveis</label>
+<input type="checkbox" id="cul"><label for="cul">Culinária</label>
+<input type="checkbox" id="pol"><label for="pol">Política</label>
+<input type="checkbox" id="polic"><label for="polic">Policial</label>
+<input type="checkbox" id="tempo"><label for="tempo">Tempo</label>
+
+<br>
+
+<input type="checkbox" id="cult"><label for="cult">Cultura</label>
+<input type="checkbox" id="eco"><label for="eco">Economia</label>
+<input type="checkbox" id="jog"><label for="jog">Jogos</label>
+<input type="checkbox" id="edu"><label for="edu">Educação</label>
+<input type="checkbox" id="via"><label for="via">Viagem</label>
+<input type="checkbox" id="emp"><label for="emp">Empregos</label>
+<input type="checkbox" id="moda"><label for="moda">Moda e Estilo</label>
+
+<br><br>
+
+<input type="checkbox" id="regras">
+<label for="regras">Li as regras de cadastro e autorizo a criação do usuário</label>
+
+<br><br>
+
+<!-- Botões -->
+<input type="submit" value="Confirmar">
+<input type="reset" value="Retornar">
+
+</form>
+
+</body>
+</html>

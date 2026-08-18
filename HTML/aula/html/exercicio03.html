@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+        <h3>Área do Triângulo</h3>
+        <p>
+            Escreva um algoritmo para ler as dimensões de um triângulo (base e altura), calcular e 
+            escrever a área do triângulo. Use a fórmula: area = base × altura / 2
+        </p>
+
+        <form onsubmit="executar3(event)" onreset="resetar3()">
+        <label>Base:</label><br>
+        <input id="base" required><br>
+        <label>Altura:</label><br>
+        <input id="altura" required><br><br>
+
+        <label id="res3"></label><br><br>
+
+        <button>Calcular</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </form>    
+    <script>
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back();
+        }
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio03.html"></script>
+    
+            
+            
+        </body>
+</html>

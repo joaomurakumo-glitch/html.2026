@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Idade</title>
+    <link rel="stylesheet" 
+    type="text/css" 
+    href="../css/estilo.css">
+
+</head>
+<body>
+    <main class="container">
+        <section class="cabecalho">
+            <header>
+            <h3>Conversor de Idade</h3>
+            <p>Insira a sua idade em anos para descobrir quantos meses e dias você já viveu aproximadamente.<p>
+            </header>
+
+            <form onsubmit="executar(event)" onreset="resetar()">
+                <label for="idIdade">Informe sua idade(em anos):</label><br>
+                <input id="idIdade" type="number"  required placeholder="Ex.: 20">
+                <br><br>
+
+                <label id="idResultado"></label>
+                <br><br>
+
+                <button type="submit">Converter</button>
+                <button type="reset">Limpar</button>
+                <button type="button" onclick="retornar()">Retornar</button>
+
+            </form>
+            </section>
+            </main>
+
+
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio04.js"></script>
+</body>
+</html>

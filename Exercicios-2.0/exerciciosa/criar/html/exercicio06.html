@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Ano Bissexto</title>
+        <link rel="stylesheet" 
+    type="text/css" 
+    href="../css/estilo.css">
+
+</head>
+<body>
+    <main class="container">
+        <section>
+    <header class="cabecalho">
+    <h1>Verificador de Ano Bissexto</h2>
+    <p>Insira um ano para descobrir se ele é bissexto (possui 366 dias) ou não.</p>
+    </header>
+    <form onsubmit="executar(event)" onreset="resetar()">
+        <label for="idAno">Informe o Ano:</label><br>
+        <input id="idAno" type="number" required placeholder="Ex.: 2024">
+        <br><br>
+
+        <label id="idResultado"></label>
+        <br><br>
+
+        <button type="submit">Verificar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </section>
+        </main>
+    </form>
+
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio06.js"></script>
+</body>
+</html>

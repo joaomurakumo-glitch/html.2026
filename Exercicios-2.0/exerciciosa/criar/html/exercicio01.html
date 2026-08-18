@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Maioridade</title>
+            <link rel="stylesheet" 
+            type="text/css" 
+            href="../css/estilo.css">
+    </head>
+    <body>
+        <main class="container">
+                <header class="cabecalho">
+                <h1>Maioridade</h3>
+                <p>Crie um programa que solicita a idade de uma pessoa e informa se ela é maior de idade ou não.</p>
+                </header>
+            <section>
+                <div class="campo1">
+                <form onsubmit="executar(event)" onreset="resetar()">
+                <label for="idIdade">Informe a sua idade</label><br>
+                <input id="idIdade" type="number" min="1" step="1" required placeholder="Ex.:18" required>
+                </div>
+                <br><br>
+                <label id="idResultado"></label>
+                <br><br>
+                <button type="submit">Verificar</button>
+                <button type="reset">Limpar</button>
+                <button type="button" onclick="retornar()">Retornar</button>
+                </form>
+            </section>
+        </main>
+
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio01.js"></script>
+</body>
+</html>

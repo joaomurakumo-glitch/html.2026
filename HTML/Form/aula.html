@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>aula</title>
+    </head>
+    <body>
+        <form action="#" method="post">  
+            <fieldset> 
+            <legend>Dados para Login</legend>
+
+            <table border="1">
+                <tr>
+                    <td><label for="id_nome">nome:</label></td>
+                    <td><input type="text" name="f_nome" id="id_nome" required placeholder="nome completo" 
+                               minlength="5" maxlength="30" size="20"><br></td>
+                </tr>
+                <tr>
+                    <td> <label for="id_email">e-mail:</label></td>
+                    <td><input type="password" name="f_email" id="id_email" required placeholder="sua senha"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="id_senha">senha:</label></td>
+                    <td><input type="text" name="f_senha" id="id_senha" required placeholder="seu e-mail"></td>
+                </tr>
+            </table>
+            
+            
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend>genero</legend>
+            <input type="radio" name="genero" id="id_masculino" value="M">
+            <label for="id_masculino">masculino</label>
+            <br>
+            <input type="radio" name="genero" id="id_feminino" value="F">
+            <label for="id_feminino">feminino</label>
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend>Curso</legend>
+            <input type="checkbox" name="f_html" id="id_html">
+            <label for="id_html">HTML</label><br>
+            <input type="checkbox" name="f_css" id="id_css">
+            <label for="id_css">CSS</label><br>
+            <input type="checkbox" name="f_js" id="id_js">
+            <label for="id_js">Javascript</label><br>
+            </fieldset>
+            <br>
+
+            <label for="id_curso">Qual curso voçe fará?</label>
+            
+            <select name="curso" id="id_curso">
+                <option value="0">HTML</option>
+                <option value="1">CSS</option>
+                <option value="2">Javascript</option>
+
+                </select>
+
+            
+            <br><br>
+            <button type="button">Enviar</button>
+
+        </form>
+    </body>
+</html>

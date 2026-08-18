@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area do Triangulo</title>
+    <link rel="stylesheet" 
+    type="text/css" 
+    href="../css/estilo.css">
+
+</head>
+<body>
+    <main class="container">
+      <header class="cabecalho">
+      <h1>Area do Triangulo</h1>
+      <p>Insira as dimensões da base e altura do triângulo. O programa irá calcular a área total.
+      </p>
+      </header>
+      <section>
+    <form onsubmit="executar(event)" onreset="resetar()">
+        <label for="idBase">Informe a Base do Triangulo:</label><br>
+        <input id="idBase" type="number" step="any" required placeholder="Ex.: 20">
+        <br><br>
+
+        <label for="idAltura">Informe a Altura do triangulo:</label><br>
+        <input id="idAltura" type="number" step="any" placeholder="Ex.: 5">
+        <br><br>
+
+        <label id="idResultado"></label>
+        <br><br>
+
+        <button type="submit">Calcular Área</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+        </section>
+        </main>
+
+    </form>
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio03.js"></script>
+</body>
+</html>

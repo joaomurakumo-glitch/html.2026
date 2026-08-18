@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maioridade</title>
+</head>
+<body>
+
+    <h3>Maioridade</h3>
+    <p>
+        Crie um programa que solicita a idade de uma pessoa e informe se ela
+        é maior de idade ou não.
+    </p>
+
+    <form onsubmit="executar(event)" onreset="resetar()">
+        <label for="idIdade">Informe a idade da pessoa</label><br>
+        <input type="number" id="idIdade" min="1" step="1" placeholder="Ex.: 18" required>
+        
+        <br><br>
+
+        <label id="idResultado"></label>
+
+        <br><br>
+
+        <button type="submit">Verificar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+    </form>
+
+    <script>
+        function executar(event) {
+            event.preventDefault(); // evita recarregar a página
+
+            let idade = document.getElementById("idIdade").value;
+            idade = parseInt(idade);
+
+            let resultado = document.getElementById("idResultado");
+
+            if (idade >= 18) {
+                resultado.innerText = "Você é maior de idade.";
+            } else {
+                resultado.innerText = "Você NÃO é maior de idade.";
+            }
+        }
+
+        function resetar() {
+            document.getElementById("idResultado").innerText = "";
+        }
+
+        function retornar() {
+            window.history.back(); // volta para página anterior
+        }
+        
+    </script>
+    <script src="../comum.js"></script>
+    <script src="../exercicio01.html"></script>
+
+</body>
+</html>

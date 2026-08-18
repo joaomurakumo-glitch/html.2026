@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+        <link rel="stylesheet" 
+    type="text/css" 
+    href="../css/estilo.css">
+
+</head>
+<body>
+    
+    <h3>Verificador de Número Par ou Ímpar</h3>
+    <p>Insira um número inteiro para descobrir se ele é par ou ímpar.</p>
+    
+    <form onsubmit="executar(event)" onreset="resetar()">
+        <label for="idNumero">Informe o Número:</label><br>
+        <input id="idNumero" type="number" required placeholder="Ex.: 7">
+        <br><br>
+
+        <label id="idResultado"></label>
+        <br><br>
+
+        <button type="submit">Verificar</button>
+        <button type="reset">Limpar</button>
+        <button type="button" onclick="retornar()">Retornar</button>
+    </form>
+
+    <script src="../js/comum.js"></script>
+    <script src="../js/exercicio08.js"></script>
+</body>
+</html>
